@@ -19,11 +19,23 @@ class Juego{
             this.nivel-=1;
         }
         if (this.puntuacion==0){
-            this.puntuacion=1;
-            alert("El jugador ha sido reseteado");
+            this.resetearPuntuacion;
         }
     }
+
+    resetearPuntuacion=()=>{this.puntuacion=1
+    alert("El Jugador ha sido reseteado");
+    }
 }
+
+let jug1= new Juego(nombre="Paco",apellidos="Gonzalez");
+let jug2= new Juego(nombre="Juan",apellidos="Gonzalez");
+jugadoresBase=[jug1,jug2];
+
+
+
+
+
 /*let Juego={
     nombre:"",
     apellidos:"",
