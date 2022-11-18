@@ -19,7 +19,7 @@ class Juego{
             this.nivel-=1;
         }
         if (this.puntuacion==0){
-            this.resetearPuntuacion;
+            this.resetearPuntuacion();
         }
     }
 
@@ -31,6 +31,17 @@ class Juego{
 let jug1= new Juego(nombre="Paco",apellidos="Gonzalez");
 let jug2= new Juego(nombre="Juan",apellidos="Gonzalez");
 jugadoresBase=[jug1,jug2];
+jugadoresBase[0].sumarPuntuacion();
+jugadoresBase[0].sumarPuntuacion();
+console.log(jugadoresBase[0])
+
+jugadoresBase[0].sumarPuntuacion();
+console.log(jugadoresBase[0])
+jugadoresBase[0].restarPuntuacion();
+console.log(jugadoresBase[0])
+jugadoresBase[1].restarPuntuacion();
+console.log(jugadoresBase[1]);
+
 
 
 
